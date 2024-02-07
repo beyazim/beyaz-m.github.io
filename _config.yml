@@ -14,6 +14,9 @@ social:
   weibo: weibo_username
 
 #Theme Settings
+plugins:
+  - jekyll-books
+
 
 #Your site's logo. Will be shown on the left top of your page.
 logo: /img/logo.jpeg
@@ -53,8 +56,7 @@ theme_setting:
       url: "链接"
       message: "说点什么吧..."
       reply: "回复"
-
-head_code: |
+#head_code: |
 # <!-- Extra codes in the head of your site pages. You can add your Google Analysis codes here! -->
 
 #The settings of comments.
