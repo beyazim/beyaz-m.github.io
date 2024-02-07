@@ -3,7 +3,7 @@ name: Build and Deploy
 on:
   push:
     branches:
-      - main  # veya ana dal adınızı kullanın
+      - main
 
 jobs:
   build:
@@ -11,10 +11,10 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v4
+      uses: actions/checkout@v2
 
     - name: Setup Ruby
-      uses: actions/setup-ruby@v1
+      uses: actions/setup-ruby@v2
       with:
         ruby-version: 3.3  # Jekyll'in desteklediği Ruby sürümünü kullanın
 
@@ -39,4 +39,4 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./_site  # Jekyll tarafından oluşturulan site dizini
+        publish_dir: ./_site
