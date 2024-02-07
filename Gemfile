@@ -7,3 +7,4 @@ gem "jekyll", "~>3.5"
 gem "webrick"
 gem "kramdown-parser-gfm"
 gem 'jekyll-books'
+gem 'nokogiri'
