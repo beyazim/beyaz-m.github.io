@@ -16,7 +16,7 @@ jobs:
     - name: Setup Ruby
       uses: actions/setup-ruby@v1
       with:
-        ruby-version: 3.3  # Jekyll'in desteklediği Ruby sürümünü kullanın
+        ruby-version: 3.3.0  # Jekyll'in desteklediği Ruby sürümünü kullanın
 
     - name: Install dependencies
       run: |
